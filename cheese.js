@@ -5,9 +5,9 @@ var SandwichMaker = (function(maker) {
   var cheesePrices = {
                     "American": 0.75,
                     "Cheddar": 0.75,
-                    "Pepperjack": 0.75;
+                    "Pepperjack": 0.75,
                     "Provolone": 0.75,
-                    "none": 0
+                    "None": 0
                   };
 
   maker.getCheese = function() {
