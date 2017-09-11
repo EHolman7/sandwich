@@ -8,42 +8,59 @@
 <h4>Sandwich Menu</h4>
 
   <article class="menuOptions">
-    <section><u>Select Bread Option</u></section>
-      	<input type="checkbox" name="breadSelection">Wheat</input>
-      	<input type="checkbox" name="breadSelection">White</input>
-      	<input type="checkbox" name="breadSelection">Sourdough</input>
-      	<input type="checkbox" name="breadSelection">Rye</input>
-      	<input type="checkbox" name="breadSelection">None</input>
-     
-    <section><u>Select Meat Option</u></section>
-   		<input type="checkbox" name="meatSelection">Bacon</input>
-       	<input type="checkbox" name="meatSelection">Ham</input>
-       	<input type="checkbox" name="meatSelection">Turkey</input>
-       	<input type="checkbox" name="meatSelection">Roast Beef</input>
-       	<input type="checkbox" name="meatSelection">None</input>
+  	<div class="breadSelection">
+    	<section id="bread-chooser"><u>Select Bread Option</u><br>
+      		<input type="checkbox" name="breadSelection">Wheat</input>
+      		<input type="checkbox" name="breadSelection">White</input>
+      		<input type="checkbox" name="breadSelection">Sourdough</input>
+      		<input type="checkbox" name="breadSelection">Rye</input>
+      		<input type="checkbox" name="breadSelection">None</input>
+    	</section>
+  	</div>
 
-    <section><u>Select Veggies Option</u></section>
-       	<input type="checkbox" name="veggieSelection">Lettuce</input>
-       	<input type="checkbox" name="veggieSelection">Tomato</input>
-       	<input type="checkbox" name="veggieSelection">Pickle</input>
-       	<input type="checkbox" name="veggieSelection">Onion</input>
-       	<input type="checkbox" name="veggieSelection">None</input>
+	<div class="meatSelection">     
+    	<section id="meat-chooser"><u>Select Meat Option</u><br>
+   			<input type="checkbox" name="meatSelection" id="bacon">Bacon</input>
+       		<input type="checkbox" name="meatSelection" id="ham">Ham</input>
+       		<input type="checkbox" name="meatSelection" id="turkey">Turkey</input>
+       		<input type="checkbox" name="meatSelection" id="roastBeef">Roast Beef</input>
+       		<input type="checkbox" name="meatSelection" id="none">None</input>
+    	</section>
+    </div>
 
-    <section><u>Select Cheese Option</u></section>
-    	<input type="checkbox" name="cheeseSelection">American</input>
-    	<input type="checkbox" name="cheeseSelection">Cheddar</input>
-    	<input type="checkbox" name="cheeseSelection">Pepperjack</input>
-    	<input type="checkbox" name="cheeseSelection">Provolone</input>
-    	<input type="checkbox" name="cheeseSelection">None</input>
+    <div class="veggieSelection">
+    	<section id="veggie-chooser"><u>Select Veggies Option</u><br>
+       		<input type="checkbox" name="veggieSelection">Lettuce</input>
+       		<input type="checkbox" name="veggieSelection">Tomato</input>
+       		<input type="checkbox" name="veggieSelection">Pickle</input>
+       		<input type="checkbox" name="veggieSelection">Onion</input>
+       		<input type="checkbox" name="veggieSelection">None</input>
+    	</section>
+    </div>
 
-    <section><u>Select Condiments Option</u></section>
-       	<input type="checkbox" name="condimentSelection">Mustard</input>
-       	<input type="checkbox" name="condimentSelection">Mayonnaise</input>
-       	<input type="checkbox" name="condimentSelection">Oil</input>
-       	<input type="checkbox" name="condimentSelection">Vinegar</input>
-       	<input type="checkbox" name="condimentSelection">None</input>
+    <div class="cheeseSelection">
+    	<section id="cheese-chooser"><u>Select Cheese Option</u><br>
+    		<input type="checkbox" name="cheeseSelection">American</input>
+    		<input type="checkbox" name="cheeseSelection">Cheddar</input>
+    		<input type="checkbox" name="cheeseSelection">Pepperjack</input>
+    		<input type="checkbox" name="cheeseSelection">Provolone</input>
+    		<input type="checkbox" name="cheeseSelection">None</input>
+   		</section>
+   	</div>
 
+   	<div class="condimentSelection">
+    	<section id="condiment-chooser"><u>Select Condiments Option</u><br>
+       		<input type="checkbox" name="condimentSelection">Mustard</input>
+    	   	<input type="checkbox" name="condimentSelection">Mayonnaise</input>
+       		<input type="checkbox" name="condimentSelection">Oil</input>
+       		<input type="checkbox" name="condimentSelection">Vinegar</input>
+       		<input type="checkbox" name="condimentSelection">None</input>
+    	</section>
+    </div>
   </article>
+
+<input type="number" name="totalPrice" id="total"><br> 
+<button id="sandwichTotal">Sandwich Total</button>
 
 <script type="text/javascript" src="bread.js"></script>
 <script type="text/javascript" src="meat.js"></script>

@@ -1,5 +1,3 @@
-console.log("linked to condiments.js");
-
 var SandwichMaker = (function(maker) {
 
   var condimentPrices = {

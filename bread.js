@@ -1,5 +1,3 @@
-console.log("linked to bread.js");
-
 var SandwichMaker = (function(maker) {
 
   var breadPrices = {
