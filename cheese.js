@@ -1,5 +1,3 @@
-console.log("linked to cheese.js");
-
 var SandwichMaker = (function(maker) {
 
   var cheesePrices = {

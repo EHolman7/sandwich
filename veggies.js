@@ -1,5 +1,3 @@
-console.log("linked to veggies.js");
-
 var SandwichMaker = (function(maker) {
 
   const veggiePrices = {

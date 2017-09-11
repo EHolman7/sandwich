@@ -1,5 +1,3 @@
-console.log("linked to meats.js");
-
 var SandwichMaker = (function(maker) {
 
   var meatPrices = {
