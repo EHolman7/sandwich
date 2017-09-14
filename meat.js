@@ -1,14 +1,16 @@
 var SandwichMaker = (function(maker) {
 
   var meatPrices = {
-                    "Bacon": 1.00,
-                    "Ham": 1.50,
-                    "Turkey": 1.50,
-                    "Roast Beef": 2.00,
-                    "None": 0
+                    "bacon": 1.00,
+                    "ham": 1.50,
+                    "turkey": 1.50,
+                    "roast beef": 2.00,
+                    "none": 0
                   };
 
-  maker.getMeat = function() {
+  maker.getMeat = function(event) {
+  	let selectMeat = meatPrices[event];
+  	console.log("selectMeat", selectMeat);
     return meatPrices;
   };
 

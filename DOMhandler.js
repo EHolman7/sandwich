@@ -8,3 +8,13 @@ let myCheese = SandwichMaker.getCheese();
 	console.log("myCheese", myCheese);
 let myCondiments = SandwichMaker.getCondiments();
 	console.log("myCondiments", myCondiments);
+
+	let meatSelect = document.getElementsByName('meatSelection');
+	console.log('meatSelect', meatSelect);
+	for (let i = 0; i < meatSelect.length; i ++){
+		meatSelect[i].addEventListener("change", (event) =>{
+			console.log('event', event);
+			myMeat(event.target.value);
+		})
+	}
+	
