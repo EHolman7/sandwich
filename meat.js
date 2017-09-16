@@ -8,9 +8,14 @@ var SandwichMaker = (function(maker) {
                     "none": 0
                   };
 
-  maker.getMeat = function(event) {
-  	let selectMeat = meatPrices[event];
-  	console.log("selectMeat", selectMeat);
+  maker.getMeat = (event) =>{
+  	return meatPrices;
+  };
+
+  maker.getMeat = (event) => {
+  	let priceOfMeat = meatPrices[event];
+  	console.log("priceOfMeat", priceOfMeat);
+    SandwichMaker.addItem(priceOfMeat);
     return meatPrices;
   };
 
