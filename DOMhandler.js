@@ -1,7 +1,7 @@
 
 
 // Variable to hold the final price. Default to 0.
-var finalSandwichPrice = 0;
+var finalSandwich = [];
 
 // Variable to hold topping that the user selects
 var selectedTopping;
@@ -17,10 +17,13 @@ var meatChooser = document.getElementsByName('meatSelection');
 	meatChooser[i].addEventListener("change", (event) =>{
 	console.log('event', event);
   // Get the value chosen from the DOM
-  	selectedTopping = event.target.value;
-  	if (selectedTopping.checked) {
-  		finalSandwich["meat"].push(selectedTopping.value);
-  		myMeat(event.target.value);
+  	selectedTopping = event.target;
+  	if (selectedTopping.checked === true) {
+  		let myMeat = SandwichMaker.getMeat(event.target.value);
+  		console.log("myMeat", myMeat);
+  		finalSandwich.push({name: event.target.value, price: myMeat});
+  	//}else{
+
   	}
   // Determine the price of the topping chosen
   // Add the topping to the SandwichMaker to increase the total price
@@ -29,8 +32,8 @@ var meatChooser = document.getElementsByName('meatSelection');
 
 // let myBread = SandwichMaker.getBread();
 // 	console.log("myBread", myBread);
- let myMeat = SandwichMaker.getMeat();
- 	console.log("myMeat", myMeat);
+// let myMeat = SandwichMaker.getMeat();
+// 	console.log("myMeat", myMeat);
 // let myVeggies = SandwichMaker.getVeggies();
 // 	console.log("myVeggies", myVeggies);
 // let myCheese = SandwichMaker.getCheese();
